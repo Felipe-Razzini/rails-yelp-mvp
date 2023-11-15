@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default bg-light py-3 border-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to "Restaurants", restaurants_path %>
+    </div>
+    <div class="navbar-right">
+      <%= link_to "New Restaurant", new_restaurant_path %>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container m-4">
+  <h1 class='mb-5 ms-4 text-primary'>Restaurants</h1>
+  <% @restaurants.each do |restaurant| %>
+  <ul>
+  <li class='card p-2'> <%= link_to restaurant.name, restaurant_path(restaurant.id), class: 'rest-name' %>
+    <div class="restaurant-info">
+    <p><%= restaurant.address %></p>
+    <p><%= restaurant.phone_number %></p>
+    <p><%= restaurant.category %></p>
+    </div>
+  </li>
+  </ul>
+  <% end %>
+</div>

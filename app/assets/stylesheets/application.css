@@ -1,15 +1,39 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+
+.restaurant-info {
+  margin-top: 10px;
+}
+
+.restaurant-info p {
+  margin-bottom: 0;
+}
+
+.container {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.form-inputs {
+  width: 50%;
+}
+
+.review-bar {
+  width: 50%;
+}
+
+.review-bar a {
+  text-decoration: none;
+  font-size: 18px;
+  background-color: rgba(128, 128, 128, 0.725);
+  border: none;
+}
+
+.div-reviews {
+  border: 1px solid grey;
+  border-radius: 7px;
+  height: 200px;
+  width: 60%;
+}

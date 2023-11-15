@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default bg-light py-3 border-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to "Restaurants", restaurants_path %>
+    </div>
+    <div class="navbar-right">
+      <%= link_to "New Restaurant", new_restaurant_path %>
+    </div>
+  </div>
+</nav>
+
+<div class="container m-4">
+  <h1 class='mb-3 ms-4 text-primary'>New Restaurant</h1>
+
+  <%= render "form", restaurant: @restaurant %>
+
+  <br>
+
+  <div>
+    <%= link_to "Back to restaurants", restaurants_path %>
+  </div>
+
+</div>
